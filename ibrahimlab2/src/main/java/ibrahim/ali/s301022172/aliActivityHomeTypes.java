@@ -18,6 +18,8 @@ public class aliActivityHomeTypes extends AppCompatActivity {
     ArrayList<HomeTypes> checkboxEntries = new ArrayList<HomeTypes>();
     HomeTypes apt1, apt2, apt3, apt4;
     HomeTypes condo1, condo2, condo3, condo4;
+    HomeTypes town1, town2, town3, town4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,14 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         condo2 = new HomeTypes("85 Vancover", 80000);
         condo3 = new HomeTypes("44 Toronto", 10000);
         condo4 = new HomeTypes("25 Vancover", 40000);
+
+
+
+        //Town House
+        town1 = new HomeTypes(getString(R.string.ibrahimTown1String), 660000);
+        town2 = new HomeTypes(getString(R.string.ibrahimTown2String), 489000);
+        town3 = new HomeTypes(getString(R.string.ibrahimTown3String), 569000);
+        town4 = new HomeTypes(getString(R.string.ibrahimTown4String), 950000);
     }
 
     @Override
@@ -150,8 +160,49 @@ public class aliActivityHomeTypes extends AppCompatActivity {
             }
             break;
 
+          case R.id.ibrahimTownAddBtn:
+
+              if (((CheckBox) findViewById(R.id.ibrahimTownVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimTownPChbx1)).isChecked()) {
+                  if (checkboxEntries.contains(town1) != true){
+                      checkboxEntries.add(town1);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimTown1String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimTown1String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimTownVChbx2)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimTownPChbx2)).isChecked()) {
+                  if (checkboxEntries.contains(town2) != true){
+                      checkboxEntries.add(town2);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimTown2String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this,  getString(R.string.ibrahimTown2String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimTownVChbx3)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimTownPChbx3)).isChecked()) {
+                  if (checkboxEntries.contains(town3) != true){
+                      checkboxEntries.add(town3);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimTown3String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimTown3String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimTownVChbx4)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimTownPChbx4)).isChecked()) {
+                  if (checkboxEntries.contains(town4) != true){
+                      checkboxEntries.add(town4);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimTown4String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimTown4String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              break;
+
         case R.id.ibrahimAptNextBtn:
         case R.id.ibrahimCondoNextBtn:
+        case R.id.ibrahimTownNextBtn:
             intent = new Intent(aliActivityHomeTypes.this, aliActivityCheckout.class);
             intent.putExtra("homeType-array", checkboxEntries);
             startActivity(intent);

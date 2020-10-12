@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">IbrahimLab2</string>
     <string name="title_activity_ibrahim">ibrahimActivity</string>
+
+    <!-- Apartments -->
     <string name="ibrahimApt1String">120 Harrison Garden Blvd, Toronto, Ontario</string>
     <string name="ibrahimApt2String">900 Mount Pleasant Rd, Toronto, Ontario</string>
     <string name="ibrahimApt3String">33 Singer Crt, Toronto, Ontario</string>
     <string name="ibrahimApt4String">24 Southport Street, Toronto, Ontario</string>
+
+
+    <!-- Town House -->
+    <string name="ibrahimTown1String">5 Everson Dr, Toronto, Ontario</string>
+    <string name="ibrahimTown2String">593 Kennedy Road, Toronto, Ontario</string>
+    <string name="ibrahimTown3String">200 Murison Blvd, Toronto, Ontario</string>
+    <string name="ibrahimTown4String">60 Homewood Avenue, Toronto, Ontario</string>
 
 </resources>
