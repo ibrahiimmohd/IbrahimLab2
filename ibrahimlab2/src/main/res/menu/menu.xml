@@ -1,0 +1,31 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aliActivityHomeTypes">
+
+
+    <item
+        android:id="@+id/aliApt"
+        android:title="Apartment"
+        android:icon="@drawable/house">
+    </item>
+    <item
+        android:id="@+id/aliDetached"
+        android:title="Detached Home">
+    </item>
+    <item
+        android:id="@+id/aliSemiDetached"
+        android:title="Semi-detached Home">
+    </item>
+    <item
+        android:id="@+id/aliCondominium"
+        android:title="Condominium Apartment">
+    </item>
+    <item
+        android:id="@+id/aliTownHouse"
+        android:title="Town House">
+    </item>
+
+</menu>

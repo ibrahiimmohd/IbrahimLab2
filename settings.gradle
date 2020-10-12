@@ -1,0 +1,2 @@
+include ':ibrahimlab2'
+rootProject.name = "IbrahimLab2"

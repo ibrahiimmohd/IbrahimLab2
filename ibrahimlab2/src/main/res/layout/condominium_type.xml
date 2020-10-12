@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtCondo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="148dp"
+        android:text="Bloor Apartment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ibrahimCondoChx1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCondo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="148dp"
+        android:text="Pape Apartment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ibrahimCondoChx2"
+        app:layout_constraintTop_toBottomOf="@+id/txtCondo1" />
+
+    <TextView
+        android:id="@+id/txtCondo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="148dp"
+        android:text="Yonge Apartment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toEndOf="@+id/ibrahimAptChbx2"
+        app:layout_constraintTop_toBottomOf="@+id/txtCondo2" />
+
+    <TextView
+        android:id="@+id/txtCondo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="132dp"
+        android:text="Donlands Apartment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toEndOf="@+id/ibrahimAptChbx1"
+        app:layout_constraintTop_toBottomOf="@+id/txtCondo3" />
+
+    <CheckBox
+        android:id="@+id/ibrahimCondoChx1"
+        android:layout_width="136dp"
+        android:layout_height="71dp"
+        android:text="Condominium1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/ibrahimCondoChx2"
+        android:layout_width="135dp"
+        android:layout_height="76dp"
+        android:text="Condominium2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibrahimCondoChx1" />
+
+    <CheckBox
+        android:id="@+id/ibrahimCondoChx3"
+        android:layout_width="134dp"
+        android:layout_height="81dp"
+        android:text="Condominium3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibrahimCondoChx2" />
+
+    <CheckBox
+        android:id="@+id/ibrahimCondoChx4"
+        android:layout_width="133dp"
+        android:layout_height="78dp"
+        android:text="Condominium4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibrahimCondoChx3" />
+
+    <Button
+        android:id="@+id/ibrahimCondoAddBtn"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="312dp"
+        android:layout_x="12px"
+        android:layout_y="361px"
+        android:onClick="onClick"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibrahimCondoNextBtn"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCondo4"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <Button
+        android:id="@+id/ibrahimCondoNextBtn"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_x="12px"
+        android:layout_y="361px"
+        android:onClick="onClick"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
