@@ -24,10 +24,10 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ali_home_types);
         //Apartments
-        apt1 = new HomeTypes("43 Toronto", 60000);
-        apt2 = new HomeTypes("85 Vancover", 80000);
-        apt3 = new HomeTypes("44 Toronto", 10000);
-        apt4 = new HomeTypes("25 Vancover", 40000);
+        apt1 = new HomeTypes(getString(R.string.ibrahimApt1String), 600000);
+        apt2 = new HomeTypes(getString(R.string.ibrahimApt2String), 869000);
+        apt3 = new HomeTypes(getString(R.string.ibrahimApt3String), 695000);
+        apt4 = new HomeTypes(getString(R.string.ibrahimApt4String), 449900);
         //Condiminums
         condo1 = new HomeTypes("43 Toronto", 60000);
         condo2 = new HomeTypes("85 Vancover", 80000);
@@ -65,16 +65,6 @@ public class aliActivityHomeTypes extends AppCompatActivity {
             default: setContentView(R.layout.activity_ali_home_types);
         }
 
-
-        /*int id = item.getItemId();
-
-        if(id == R.id.aliApt){
-            apt1.setVisibility(View.VISIBLE);
-            return true;
-        }else{
-            apt1.setVisibility(View.INVISIBLE);
-        }*/
-
         return true;
     }
 
@@ -84,39 +74,39 @@ public class aliActivityHomeTypes extends AppCompatActivity {
 
         case R.id.ibrahimAptAddBtn:
 
-            if (((CheckBox) findViewById(R.id.ibrahimAptChbx1)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimAptVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimAptPChbx1)).isChecked()) {
                 if (checkboxEntries.contains(apt1) != true){
                     checkboxEntries.add(apt1);
-                    Toast.makeText(this, "You have added Apartment 1!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimApt1String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Apartment 1 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, getString(R.string.ibrahimApt1String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
 
-            if (((CheckBox) findViewById(R.id.ibrahimAptChbx2)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimAptVChbx2)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimAptPChbx2)).isChecked()) {
                 if (checkboxEntries.contains(apt2) != true){
                     checkboxEntries.add(apt2);
-                    Toast.makeText(this, "You have added Apartment 2!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimApt2String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Apartment 2 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this,  getString(R.string.ibrahimApt2String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
 
-            if (((CheckBox) findViewById(R.id.ibrahimAptChbx3)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimAptVChbx3)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimAptPChbx3)).isChecked()) {
                 if (checkboxEntries.contains(apt3) != true){
                     checkboxEntries.add(apt3);
-                    Toast.makeText(this, "You have added Apartment 3!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimApt3String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Apartment 3 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, getString(R.string.ibrahimApt3String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
 
-            if (((CheckBox) findViewById(R.id.ibrahimAptChbx4)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimAptVChbx4)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimAptPChbx4)).isChecked()) {
                 if (checkboxEntries.contains(apt4) != true){
                     checkboxEntries.add(apt4);
-                    Toast.makeText(this, "You have added Apartment 4!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimApt4String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Apartment 4 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, getString(R.string.ibrahimApt4String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
 

@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">IbrahimLab2</string>
     <string name="title_activity_ibrahim">ibrahimActivity</string>
+    <string name="ibrahimApt1String">120 Harrison Garden Blvd, Toronto, Ontario</string>
+    <string name="ibrahimApt2String">900 Mount Pleasant Rd, Toronto, Ontario</string>
+    <string name="ibrahimApt3String">33 Singer Crt, Toronto, Ontario</string>
+    <string name="ibrahimApt4String">24 Southport Street, Toronto, Ontario</string>
 
 </resources>
