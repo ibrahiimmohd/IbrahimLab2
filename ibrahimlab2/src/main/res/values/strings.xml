@@ -8,6 +8,11 @@
     <string name="ibrahimApt3String">33 Singer Crt, Toronto, Ontario</string>
     <string name="ibrahimApt4String">24 Southport Street, Toronto, Ontario</string>
 
+    <!-- Condominium -->
+    <string name="ibrahimCondo1String">15 Iceboat Terr 1808, Toronto, Ontario</string>
+    <string name="ibrahimCondo2String">170 Sudbury St, Toronto, Ontario</string>
+    <string name="ibrahimCondo3String">6 Eva Road 1011, Toronto, Ontario</string>
+    <string name="ibrahimCondo4String">20 Richardson St, Toronto, Ontario</string>
 
     <!-- Town House -->
     <string name="ibrahimTown1String">5 Everson Dr, Toronto, Ontario</string>

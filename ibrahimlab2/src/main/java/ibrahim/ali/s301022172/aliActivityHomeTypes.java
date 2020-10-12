@@ -30,13 +30,12 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         apt2 = new HomeTypes(getString(R.string.ibrahimApt2String), 869000);
         apt3 = new HomeTypes(getString(R.string.ibrahimApt3String), 695000);
         apt4 = new HomeTypes(getString(R.string.ibrahimApt4String), 449900);
+
         //Condiminums
-        condo1 = new HomeTypes("43 Toronto", 60000);
-        condo2 = new HomeTypes("85 Vancover", 80000);
-        condo3 = new HomeTypes("44 Toronto", 10000);
-        condo4 = new HomeTypes("25 Vancover", 40000);
-
-
+        condo1 = new HomeTypes(getString(R.string.ibrahimCondo1String), 698000);
+        condo2 = new HomeTypes(getString(R.string.ibrahimCondo2String), 524900);
+        condo3 = new HomeTypes(getString(R.string.ibrahimCondo3String), 495000);
+        condo4 = new HomeTypes(getString(R.string.ibrahimCondo4String), 599900);
 
         //Town House
         town1 = new HomeTypes(getString(R.string.ibrahimTown1String), 660000);
@@ -120,47 +119,63 @@ public class aliActivityHomeTypes extends AppCompatActivity {
                 }
             }
 
+            if(checkboxEntries.size() == 0)
+            {
+                Toast.makeText(this, "Please add any house(s) of your interest", Toast.LENGTH_LONG).show();
+            }
+
             break;
         case R.id.ibrahimCondoAddBtn:
 
-            if (((CheckBox) findViewById(R.id.ibrahimCondoChx1)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimCondoVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimCondoPChbx1)).isChecked()) {
                 if (checkboxEntries.contains(condo1) != true){
                     checkboxEntries.add(condo1);
-                    Toast.makeText(this, "You have added Condominium 1!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimCondo1String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Condominium 1 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, getString(R.string.ibrahimCondo1String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
 
-            if (((CheckBox) findViewById(R.id.ibrahimCondoChx2)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimCondoVChbx2)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimCondoPChbx2)).isChecked()) {
                 if (checkboxEntries.contains(condo2) != true){
                     checkboxEntries.add(condo2);
-                    Toast.makeText(this, "You have added Condominium 2!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimCondo2String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Condominium 2 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this,  getString(R.string.ibrahimCondo2String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
 
-            if (((CheckBox) findViewById(R.id.ibrahimCondoChx3)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimCondoVChbx3)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimCondoPChbx3)).isChecked()) {
                 if (checkboxEntries.contains(condo3) != true){
                     checkboxEntries.add(condo3);
-                    Toast.makeText(this, "You have added Condominium 3!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimCondo3String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Condominium 3 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, getString(R.string.ibrahimCondo3String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
 
-            if (((CheckBox) findViewById(R.id.ibrahimCondoChx4)).isChecked()) {
+            if (((CheckBox) findViewById(R.id.ibrahimCondoVChbx4)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimCondoPChbx4)).isChecked()) {
                 if (checkboxEntries.contains(condo4) != true){
                     checkboxEntries.add(condo4);
-                    Toast.makeText(this, "You have added Condominium 4!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "You have added " + getString(R.string.ibrahimCondo4String), Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Condominium 4 has already been added!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, getString(R.string.ibrahimCondo4String) + " has already been added!", Toast.LENGTH_LONG).show();
                 }
             }
+
+            if(checkboxEntries.size() == 0)
+            {
+                Toast.makeText(this, "Please add any house(s) of your interest", Toast.LENGTH_LONG).show();
+            }
+
             break;
 
           case R.id.ibrahimTownAddBtn:
+
+              if(checkboxEntries.size() == 0)
+              {
+                  Toast.makeText(this, "Please add any house of your interest", Toast.LENGTH_LONG).show();
+              }
 
               if (((CheckBox) findViewById(R.id.ibrahimTownVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimTownPChbx1)).isChecked()) {
                   if (checkboxEntries.contains(town1) != true){
@@ -198,14 +213,27 @@ public class aliActivityHomeTypes extends AppCompatActivity {
                   }
               }
 
+              if(checkboxEntries.size() == 0)
+              {
+                  Toast.makeText(this, "Please add any house(s) of your interest", Toast.LENGTH_LONG).show();
+              }
+
               break;
 
         case R.id.ibrahimAptNextBtn:
         case R.id.ibrahimCondoNextBtn:
         case R.id.ibrahimTownNextBtn:
-            intent = new Intent(aliActivityHomeTypes.this, aliActivityCheckout.class);
-            intent.putExtra("homeType-array", checkboxEntries);
-            startActivity(intent);
+
+            if(checkboxEntries.size() == 0)
+            {
+                Toast.makeText(this, "Please add any house(s) of your interest", Toast.LENGTH_LONG).show();
+            }else
+            {
+                intent = new Intent(aliActivityHomeTypes.this, aliActivityCheckout.class);
+                intent.putExtra("homeType-array", checkboxEntries);
+                startActivity(intent);
+            }
+
             break;
         default:
       }
