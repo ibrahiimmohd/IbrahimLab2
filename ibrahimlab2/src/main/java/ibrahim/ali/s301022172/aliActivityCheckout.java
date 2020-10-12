@@ -1,7 +1,9 @@
 package ibrahim.ali.s301022172;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -78,9 +80,30 @@ public class aliActivityCheckout extends AppCompatActivity {
         }
     }
 
-//    @Override
-//    public void onBackPressed(){
-//        intent = new Intent(aliActivityCheckout.this, aliActivityHomeTypes.class);
-//        startActivity(intent);
-//    }
+    @Override
+    public void onBackPressed(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("All your selections will be lost. Do you want to proceed?");
+        builder.setCancelable(false);
+
+        builder.setPositiveButton(
+                "Yes",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        intent = new Intent(aliActivityCheckout.this, aliActivityHomeTypes.class);
+                        startActivity(intent);
+                    }
+                });
+
+        builder.setNegativeButton(
+                "No",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
 }
