@@ -13,6 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="Debit Card"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCardName" />
 
@@ -23,6 +24,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="Phone"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtAge" />
 
@@ -33,6 +35,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:text="Age"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtFullName" />
 
@@ -56,6 +59,7 @@
         android:layout_marginStart="58dp"
         android:layout_marginEnd="28dp"
         android:ems="10"
+        android:maxLength="16"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
@@ -69,6 +73,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="Full Name"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCCV" />
 
@@ -79,6 +84,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
         android:text="Country"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPhone" />
 
@@ -115,6 +121,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="Expiry Date"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDebitCard" />
 
@@ -125,6 +132,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="Card Holder Name"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,6 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:maxLength="10"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.756"
@@ -160,6 +169,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="CCV"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDate" />
 
@@ -169,6 +179,7 @@
         android:layout_height="51dp"
         android:layout_marginStart="110dp"
         android:ems="10"
+        android:maxLength="3"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCCV"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertDate" />
@@ -178,11 +189,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="67dp"
-
         android:layout_marginEnd="28dp"
         android:ems="10"
         android:inputType="date"
-        android:text="Enter Date"
+        android:text="Click For Date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtDate"
@@ -194,6 +204,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
         android:text="Pay"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.913"

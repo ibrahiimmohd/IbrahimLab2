@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
@@ -11,19 +12,22 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 import java.util.ArrayList;
 
 public class aliActivityPayment extends AppCompatActivity {
 
     DatePickerDialog picker;
-    EditText datePicker;
+    EditText datePicker, creditOrDebitCard, ccv, phone, fullname;
+    Intent intent;
+    ArrayList<Boolean> radioBtnsArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ArrayList<Boolean> radioBtnsArray = new ArrayList<Boolean>();
+        radioBtnsArray = new ArrayList<Boolean>();
         radioBtnsArray = (ArrayList<Boolean>) getIntent().getSerializableExtra("isChecked");
 
         if(radioBtnsArray.get(0) == true){
@@ -57,8 +61,56 @@ public class aliActivityPayment extends AppCompatActivity {
                 }
             });
         }
-
-
-
     }
+
+    public void onClick(View view) {
+
+        creditOrDebitCard = (EditText) findViewById(R.id.ibrahimInsertCreditCard);
+        ccv = (EditText) findViewById(R.id.ibrahimInsertCCV);
+        phone = (EditText) findViewById(R.id.ibrahimInsertPhone);
+        fullname = (EditText) findViewById(R.id.ibrahimInsertFullname);
+
+        int id = view.getId();
+
+        if( id == R.id.ibrahimPayBtn){
+
+            if(phone.length() != 10)
+            {
+                phone.setError("Please Insert 10 Digit long number");
+            }
+
+            if(fullname.length() == 0)
+            {
+                fullname.setError("Please Insert your full name");
+            }
+
+            if(radioBtnsArray.get(0) != true){
+                if(creditOrDebitCard.length() != 16)
+                {
+                    creditOrDebitCard.setError("Please Insert 16 Digit long number");
+                }
+
+                if(ccv.length() != 3)
+                {
+                    ccv.setError("Please Insert 3 Digit long number");
+                }
+
+                if(creditOrDebitCard.length() == 16 && ccv.length() == 3 && phone.length() == 10 && fullname.length() != 0)
+                {
+                    intent = new Intent(this, aliActivityFinalOrder.class);
+                    intent.putExtra("name", fullname.getText().toString());
+                    startActivity(intent);
+                }
+
+            }else{
+                if(phone.length() == 10 && fullname.length() != 0)
+                {
+                    intent = new Intent(this, aliActivityFinalOrder.class);
+                    intent.putExtra("name", fullname.getText().toString());
+                    startActivity(intent);
+                }
+            }
+        }
+    }
+
 }

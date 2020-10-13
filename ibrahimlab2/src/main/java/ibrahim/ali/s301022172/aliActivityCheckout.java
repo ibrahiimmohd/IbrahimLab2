@@ -55,7 +55,7 @@ public class aliActivityCheckout extends AppCompatActivity {
 
         int id = view.getId();
 
-        if( id == R.id.ibrahimPaymentBtn){
+        if( id == R.id.ibrahimCheckoutBtn){
             if (((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() != -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() != -1)
             {
                 // one of the radio buttons is checked

@@ -13,6 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:text="Phone"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtAge" />
 
@@ -23,6 +24,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="Age"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtFullName" />
 
@@ -47,6 +49,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="60dp"
         android:text="Full Name"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPrepareCash" />
 
@@ -57,6 +60,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="Country"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPhone" />
 
@@ -91,6 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:maxLength="10"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.756"
@@ -118,6 +123,7 @@
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
+        android:textSize="70px"
         android:text="Please prepare your cash!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
