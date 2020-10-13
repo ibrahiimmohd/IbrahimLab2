@@ -36,7 +36,8 @@ public class aliActivityCheckout extends AppCompatActivity {
             RadioButton button = new RadioButton(this);
             button.setId(i);
             homeType = homeTypeArray.get(i);
-            button.setText(homeType.get_address() + " " + homeType.get_price());
+            button.setText("Address: " + homeType.get_address() + "\nPrice: $" + homeType.get_price());
+            button.setTextSize(17);
             hourButtonLayout.addView(button);
         }
     }
