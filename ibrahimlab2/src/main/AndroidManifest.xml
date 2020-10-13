@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/ibrahimAppTitle"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -15,7 +15,7 @@
         <activity android:name=".aliActivityHomeTypes" />
         <activity
             android:name=".ibrahimActivity"
-            android:label="@string/title_activity_ibrahim">
+            android:label="@string/ibrahimAppTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

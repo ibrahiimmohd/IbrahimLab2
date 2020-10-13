@@ -5,8 +5,9 @@
  -->
 
 <resources>
-    <string name="app_name">IbrahimLab2</string>
-    <string name="title_activity_ibrahim">ibrahimActivity</string>
+    <!-- Whole App-->
+    <string name="ibrahimAppName">IbrahimLab2</string>
+    <string name="ibrahimAppTitle">LeaseOrRentHome Inc.</string>
 
     <!-- Home Screen -->
     <string name="ibrahimTxtMainScreen">Click on any menu options to display homes</string>
