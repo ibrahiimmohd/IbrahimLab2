@@ -23,25 +23,22 @@
             android:id="@+id/ibrahimTxtDet1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="161 Cinrickbar Cres, Toronto, Ontario\n$434,900 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtDetached1" />
 
         <CheckBox
             android:id="@+id/ibrahimDetPChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimDetVChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgDet2"
@@ -55,25 +52,22 @@
             android:id="@+id/ibrahimTxtDet2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="286 Strathmore Blvd, Toronto, Ontario\n$550,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtDetached2" />
 
         <CheckBox
             android:id="@+id/ibrahimDetVChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimDetPChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgDet3"
@@ -87,25 +81,22 @@
             android:id="@+id/ibrahimTxtDet3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="9 Thirty Ninth St, Toronto, Ontario\n$959,900 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtDetached3" />
 
         <CheckBox
             android:id="@+id/ibrahimDetPChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimDetVChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgDet4"
@@ -119,25 +110,22 @@
             android:id="@+id/ibrahimTxtDet4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="720 Bloor Street, Toronto, Ontario\n$999,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtDetached4" />
 
         <CheckBox
             android:id="@+id/ibrahimDetVChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimDetPChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <Button
             android:id="@+id/ibrahimDetAddBtn"
@@ -146,7 +134,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Add Interest(s)" />
+            android:text="@string/ibrahimTxtInterestBtn" />
 
         <Button
             android:id="@+id/ibrahimDetNextBtn"
@@ -155,6 +143,6 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Next" />
+            android:text="@string/ibrahimTxtNextBtn" />
     </LinearLayout>
 </ScrollView>

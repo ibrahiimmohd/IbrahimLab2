@@ -1,6 +1,25 @@
+<!--
+    * Full Name: Ibrahim Ali
+    * Student ID: 301022172
+    * Section: COMP 304 - 002
+ -->
+
 <resources>
     <string name="app_name">IbrahimLab2</string>
     <string name="title_activity_ibrahim">ibrahimActivity</string>
+
+    <!-- Home Screen -->
+    <string name="ibrahimTxtMainScreen">Click on any menu options to display homes</string>
+    <string name="ibrahimTxtEnterBtn">Enter</string>
+
+    <!-- Home Types-->
+    <string name="ibrahimTxtNextBtn">Next</string>
+    <string name="ibrahimTxtInterestBtn">Add Interest(s)</string>
+    <string name="ibrahimPhysicalChx">Physically</string>
+    <string name="ibrahimVirtualChx">Virtually</string>
+    <string name="ibrahimSetAdded">You have added \</string>
+    <string name="ibrahimSetAlreadyAdded">\ has already been added!</string>
+    <string name="ibrahimSetHouseInterest">Please add any house(s) of your interest</string>
 
     <!-- Apartments -->
     <string name="ibrahimApt1String">120 Harrison Garden Blvd, Toronto, Ontario</string>
@@ -8,11 +27,21 @@
     <string name="ibrahimApt3String">33 Singer Crt, Toronto, Ontario</string>
     <string name="ibrahimApt4String">24 Southport Street, Toronto, Ontario</string>
 
+    <string name="ibrahimTxtApt1">120 Harrison Garden Blvd, Toronto, Ontario\n$600,000 CAD</string>
+    <string name="ibrahimTxtApt2">900 Mount Pleasant Rd, Toronto, Ontario\n$869,000 CAD</string>
+    <string name="ibrahimTxtApt3">33 Singer Crt, Toronto, Ontario\n$695,000 CAD</string>
+    <string name="ibrahimTxtApt4">24 Southport Street, Toronto, Ontario\n$449,900 CAD</string>
+
     <!-- Condominium -->
     <string name="ibrahimCondo1String">15 Iceboat Terr 1808, Toronto, Ontario</string>
     <string name="ibrahimCondo2String">170 Sudbury St, Toronto, Ontario</string>
     <string name="ibrahimCondo3String">6 Eva Road 1011, Toronto, Ontario</string>
     <string name="ibrahimCondo4String">20 Richardson St, Toronto, Ontario</string>
+
+    <string name="ibrahimTxtCondo1">15 Iceboat Terr 1808, Toronto, Ontario\n$698,000 CAD</string>
+    <string name="ibrahimTxtCondo2">170 Sudbury St, Toronto, Ontario\n$524,900 CAD</string>
+    <string name="ibrahimTxtCondo3">6 Eva Road 1011, Toronto, Ontario\n$495,000 CAD</string>
+    <string name="ibrahimTxtCondo4">20 Richardson St, Toronto, Ontario\n$599,900 CAD</string>
 
     <!-- Detached -->
     <string name="ibrahimDet1String">161 Cinrickbar Cres, Toronto, Ontario</string>
@@ -20,16 +49,68 @@
     <string name="ibrahimDet3String">9 Thirty Ninth St, Toronto, Ontario</string>
     <string name="ibrahimDet4String">720 Bloor Street, Toronto, Ontario</string>
 
+    <string name="ibrahimTxtDetached1">161 Cinrickbar Cres, Toronto, Ontario\n$434,900 CAD</string>
+    <string name="ibrahimTxtDetached2">286 Strathmore Blvd, Toronto, Ontario\n$550,000 CAD</string>
+    <string name="ibrahimTxtDetached3">9 Thirty Ninth St, Toronto, Ontario\n$959,900 CAD</string>
+    <string name="ibrahimTxtDetached4">720 Bloor Street, Toronto, Ontario\n$999,000 CAD</string>
+
     <!-- Semi Detached -->
     <string name="ibrahimSemiD1String">75A Dawes Rd, Toronto, Ontario</string>
     <string name="ibrahimSemiD2String">10 Strathmore Blvd, Toronto, Ontario</string>
     <string name="ibrahimSemiD3String">16 Cobb Ave, Toronto, Ontario</string>
     <string name="ibrahimSemiD4String">158 Woodfern Dr, Toronto, Ontario</string>
 
+    <string name="ibrahimTxtSemiD1">75A Dawes Rd, Toronto, Ontario\n$899,900 CAD</string>
+    <string name="ibrahimTxtSemiD2">10 Strathmore Blvd, Toronto, Ontario\n$999,000 CAD</string>
+    <string name="ibrahimTxtSemiD3">16 Cobb Ave, Toronto, Ontario\n$788,800 CAD</string>
+    <string name="ibrahimTxtSemiD4">158 Woodfern Dr, Toronto, Ontario\n$739,900 CAD</string>
+
     <!-- Town House -->
     <string name="ibrahimTown1String">5 Everson Dr, Toronto, Ontario</string>
     <string name="ibrahimTown2String">593 Kennedy Road, Toronto, Ontario</string>
     <string name="ibrahimTown3String">200 Murison Blvd, Toronto, Ontario</string>
     <string name="ibrahimTown4String">60 Homewood Avenue, Toronto, Ontario</string>
+
+    <string name="ibrahimTxtTownH1">5 Everson Dr, Toronto, Ontario\n$660,000 CAD</string>
+    <string name="ibrahimTxtTownH2">593 Kennedy Road, Toronto, Ontario\n$489,000 CAD</string>
+    <string name="ibrahimTxtTownH3">200 Murison Blvd, Toronto, Ontario\n$569,000 CAD</string>
+    <string name="ibrahimTxtTownH4">60 Homewood Avenue, Toronto, Ontario\n$950,000 CAD</string>
+
+    <!-- Checkout -->
+    <string name="ibrahimTxtSelectPayment">Select any payment option</string>
+    <string name="ibrahimTxtCashOption">Cash</string>
+    <string name="ibrahimTxtDebitOption">Debit Card</string>
+    <string name="ibrahimTxtCreditOption">Credit Card</string>
+    <string name="ibrahimTxtCheckout">Checkout</string>
+    <string name="ibrahimIfHomePayment">Payment and Home Type Radio Groups are not selected!</string>
+    <string name="ibrahimIfPayment">Payment Radio Group is not selected!</string>
+    <string name="ibrahimIfHome">Home Type Radio Group is not selected!</string>
+    <string name="ibrahimSelectionsClear">All your selections will be lost. Do you want to proceed?</string>
+    <string name="ibrahimSetAddress">Address: \</string>
+    <string name="ibrahimSetPrice">\nPrice: $</string>
+
+    <!-- Cash/Credit/Debit -->
+    <string name="ibrahimTxtExpiryDate">Expiry Date</string>
+    <string name="ibrahimTxtCardHolder">Card Holder Name</string>
+    <string name="ibrahimTxtCCV">CCV</string>
+    <string name="ibrahimEditExpiryDate">Click For Date</string>
+    <string name="ibrahimTxtCreditCard">Credit Card</string>
+    <string name="ibrahimTxtDebitCard">Debit Card</string>
+    <string name="ibrahimTxtCashScreen">Please prepare your cash!</string>
+    <string name="ibrahimTxtPhone">Phone</string>
+    <string name="ibrahimTxtAge">Age</string>
+    <string name="ibrahimTxtFullname">Full Name</string>
+    <string name="ibrahimTxtCountry">Country</string>
+    <string name="ibrahimTxtPayBtn">Pay</string>
+
+    <!-- Final Order Info -->
+    <string name="ibrahimSetThankYou1">Thank you \</string>
+    <string name="ibrahimSetThankYou2">\ for your purchase! We would love to see you again!</string>
+
+    <!-- Payment Error Messages -->
+    <string name="ibrahimSetPhoneError">Please Insert 10 Digit long number</string>
+    <string name="ibrahimSetFullnameError">Please Insert your full name</string>
+    <string name="ibrahimSetCreditCardError">Please Insert 16 Digit long number</string>
+    <string name="ibrahimSetCCVError">Please Insert 3 Digit long number</string>
 
 </resources>

@@ -23,25 +23,22 @@
             android:id="@+id/ibrahimTxtSemiD1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="75A Dawes Rd, Toronto, Ontario\n$899,900 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtSemiD1" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDPChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDVChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgSemiD2"
@@ -55,25 +52,22 @@
             android:id="@+id/ibrahimTxtSemiD2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="10 Strathmore Blvd, Toronto, Ontario\n$999,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtSemiD2" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDVChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDPChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgSemiD3"
@@ -87,25 +81,22 @@
             android:id="@+id/ibrahimTxtSemiD3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="16 Cobb Ave, Toronto, Ontario\n$788,800 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtSemiD3" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDPChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDVChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgSemiD4"
@@ -119,25 +110,22 @@
             android:id="@+id/ibrahimTxtSemiD4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="158 Woodfern Dr, Toronto, Ontario\n$739,900 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtSemiD4" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDVChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimSemiDPChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <Button
             android:id="@+id/ibrahimSemiDAddBtn"
@@ -146,7 +134,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Add Interest(s)" />
+            android:text="@string/ibrahimTxtInterestBtn" />
 
         <Button
             android:id="@+id/ibrahimSemiDNextBtn"
@@ -155,6 +143,6 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Next" />
+            android:text="@string/ibrahimTxtNextBtn" />
     </LinearLayout>
 </ScrollView>

@@ -23,25 +23,22 @@
             android:id="@+id/ibrahimTxtCondo1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="15 Iceboat Terr 1808, Toronto, Ontario\n$698,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtCondo1" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoPChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoVChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgCondo2"
@@ -55,25 +52,22 @@
             android:id="@+id/ibrahimTxtCondo2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="170 Sudbury St, Toronto, Ontario\n$524,900 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtCondo2" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoVChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoPChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgCondo3"
@@ -87,25 +81,22 @@
             android:id="@+id/ibrahimTxtCondo3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="6 Eva Road 1011, Toronto, Ontario\n$495,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtCondo3" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoPChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoVChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgCondo4"
@@ -120,24 +111,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="20 Richardson St, Toronto, Ontario\n$599,900 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtCondo4" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoVChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimCondoPChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <Button
             android:id="@+id/ibrahimCondoAddBtn"
@@ -146,7 +135,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Add Interest(s)" />
+            android:text="@string/ibrahimTxtInterestBtn" />
 
         <Button
             android:id="@+id/ibrahimCondoNextBtn"
@@ -155,6 +144,6 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Next" />
+            android:text="@string/ibrahimTxtNextBtn" />
     </LinearLayout>
 </ScrollView>

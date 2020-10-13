@@ -1,3 +1,9 @@
+/**
+ * Full Name: Ibrahim Ali
+ * Student ID: 301022172
+ * Section: COMP 304 - 002
+ * */
+
 package ibrahim.ali.s301022172;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,24 +23,13 @@ public class ibrahimActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        switch(view.getId())
-        {
-            case R.id.ibrahimEnter:
-                intent = new Intent(ibrahimActivity.this, aliActivityHomeTypes.class);
-                //starts the new activity
-                startActivity(intent);
-                break;
-            default:
-                intent = new Intent(ibrahimActivity.this, aliActivityHomeTypes.class);
-                //starts the new activity
-                startActivity(intent);
-                break;
-        }
-    }
 
-    @Override
-    public void onBackPressed(){
-        //show the previous view
-        setContentView(R.layout.activity_ali_home_types);
+        int id = view.getId();
+
+        if( id == R.id.ibrahimEnter){
+            intent = new Intent(ibrahimActivity.this, aliActivityHomeTypes.class);
+            //starts the new activity
+            startActivity(intent);
+        }
     }
 }

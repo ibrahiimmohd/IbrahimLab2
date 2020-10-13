@@ -1,3 +1,9 @@
+/**
+ * Full Name: Ibrahim Ali
+ * Student ID: 301022172
+ * Section: COMP 304 - 002
+ * */
+
 package ibrahim.ali.s301022172;
 
 import androidx.annotation.RequiresApi;
@@ -76,23 +82,23 @@ public class aliActivityPayment extends AppCompatActivity {
 
             if(phone.length() != 10)
             {
-                phone.setError("Please Insert 10 Digit long number");
+                phone.setError(getString(R.string.ibrahimSetPhoneError));
             }
 
             if(fullname.length() == 0)
             {
-                fullname.setError("Please Insert your full name");
+                fullname.setError(getString(R.string.ibrahimSetFullnameError));
             }
 
             if(radioBtnsArray.get(0) != true){
                 if(creditOrDebitCard.length() != 16)
                 {
-                    creditOrDebitCard.setError("Please Insert 16 Digit long number");
+                    creditOrDebitCard.setError(getString(R.string.ibrahimSetCreditCardError));
                 }
 
                 if(ccv.length() != 3)
                 {
-                    ccv.setError("Please Insert 3 Digit long number");
+                    ccv.setError(getString(R.string.ibrahimSetCCVError));
                 }
 
                 if(creditOrDebitCard.length() == 16 && ccv.length() == 3 && phone.length() == 10 && fullname.length() != 0)

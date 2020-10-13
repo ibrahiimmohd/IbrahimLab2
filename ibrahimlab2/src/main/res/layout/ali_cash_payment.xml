@@ -12,7 +12,7 @@
         android:layout_height="21dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="Phone"
+        android:text="@string/ibrahimTxtPhone"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtAge" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="Age"
+        android:text="@string/ibrahimTxtAge"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtFullName" />
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="60dp"
-        android:text="Full Name"
+        android:text="@string/ibrahimTxtFullname"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPrepareCash" />
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="Country"
+        android:text="@string/ibrahimTxtCountry"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPhone" />
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
-        android:text="Pay"
+        android:text="@string/ibrahimTxtPayBtn"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,7 +125,7 @@
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:textSize="70px"
-        android:text="Please prepare your cash!"
+        android:text="@string/ibrahimTxtCashScreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

@@ -23,25 +23,22 @@
             android:id="@+id/ibrahimTxtApt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="120 Harrison Garden Blvd, Toronto, Ontario\n$600,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtApt1" />
 
         <CheckBox
             android:id="@+id/ibrahimAptPChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimAptVChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgApt2"
@@ -55,25 +52,22 @@
             android:id="@+id/ibrahimTxtApt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="900 Mount Pleasant Rd, Toronto, Ontario\n$869,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtApt2" />
 
         <CheckBox
             android:id="@+id/ibrahimAptVChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimAptPChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgApt3"
@@ -87,25 +81,22 @@
             android:id="@+id/ibrahimTxtApt3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="33 Singer Crt, Toronto, Ontario\n$695,000 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtApt3" />
 
         <CheckBox
             android:id="@+id/ibrahimAptPChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimAptVChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
             android:id="@+id/ibrahimImgApt4"
@@ -119,25 +110,22 @@
             android:id="@+id/ibrahimTxtApt4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="24 Southport Street, Toronto, Ontario\n$449,900 CAD" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtApt4" />
 
         <CheckBox
             android:id="@+id/ibrahimAptVChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Virtually" />
+            android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
             android:id="@+id/ibrahimAptPChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:text="Physically" />
+            android:text="@string/ibrahimPhysicalChx" />
 
         <Button
             android:id="@+id/ibrahimAptAddBtn"
@@ -146,7 +134,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Add Interest(s)" />
+            android:text="@string/ibrahimTxtInterestBtn" />
 
         <Button
             android:id="@+id/ibrahimAptNextBtn"
@@ -155,6 +143,6 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
-            android:text="Next" />
+            android:text="@string/ibrahimTxtNextBtn" />
     </LinearLayout>
 </ScrollView>

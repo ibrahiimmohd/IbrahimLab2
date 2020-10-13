@@ -1,3 +1,9 @@
+/**
+ * Full Name: Ibrahim Ali
+ * Student ID: 301022172
+ * Section: COMP 304 - 002
+ * */
+
 package ibrahim.ali.s301022172;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +27,6 @@ public class aliActivityFinalOrder extends AppCompatActivity {
         fullname = (TextView) findViewById(R.id.ibrahimTxtFullNameFinalOrder);
 
         name = getIntent().getExtras().getString("name");
-        fullname.setText("Thank you "+name+" for your purchase! We would love to see you again!");
+        fullname.setText(getString(R.string.ibrahimSetThankYou1)+name+getString(R.string.ibrahimSetThankYou2));
     }
 }

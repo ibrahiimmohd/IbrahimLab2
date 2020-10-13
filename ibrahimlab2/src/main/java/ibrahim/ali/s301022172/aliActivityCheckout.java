@@ -1,3 +1,9 @@
+/**
+ * Full Name: Ibrahim Ali
+ * Student ID: 301022172
+ * Section: COMP 304 - 002
+ * */
+
 package ibrahim.ali.s301022172;
 
 import androidx.appcompat.app.AlertDialog;
@@ -31,12 +37,12 @@ public class aliActivityCheckout extends AppCompatActivity {
         ArrayList<HomeTypes> homeTypeArray = new ArrayList<HomeTypes>();
         homeTypeArray = (ArrayList<HomeTypes>) getIntent().getSerializableExtra("homeType-array");
 
-        ViewGroup hourButtonLayout = (ViewGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup);  // This is the id of the RadioGroup we defined
+        ViewGroup hourButtonLayout = (ViewGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup);
         for (int i = 0; i < homeTypeArray.size(); i++) {
             RadioButton button = new RadioButton(this);
             button.setId(i);
             homeType = homeTypeArray.get(i);
-            button.setText("Address: " + homeType.get_address() + "\nPrice: $" + homeType.get_price());
+            button.setText(getString(R.string.ibrahimSetAddress) + homeType.get_address() + getString(R.string.ibrahimSetPrice) + homeType.get_price());
             button.setTextSize(17);
             hourButtonLayout.addView(button);
         }
@@ -66,17 +72,17 @@ public class aliActivityCheckout extends AppCompatActivity {
             else if (((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() == -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() == -1)
             {
                 //Payment and Home Type Radio Groups are not selected
-                Toast.makeText(this, "Payment and Home Type Radio Groups are not selected!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.ibrahimIfHomePayment, Toast.LENGTH_LONG).show();
             }
             else if(((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() == -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() != -1)
             {
                 //Payment Radio Group is not selected
-                Toast.makeText(this, "Payment Radio Group is not selected!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.ibrahimIfPayment, Toast.LENGTH_LONG).show();
             }
             else if(((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() != -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() == -1)
             {
                 //Home Type Radio Group is not selected
-                Toast.makeText(this, "Home Type Radio Group is not selected!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.ibrahimIfHome, Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -84,7 +90,7 @@ public class aliActivityCheckout extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("All your selections will be lost. Do you want to proceed?");
+        builder.setMessage(R.string.ibrahimSelectionsClear);
         builder.setCancelable(false);
 
         builder.setPositiveButton(

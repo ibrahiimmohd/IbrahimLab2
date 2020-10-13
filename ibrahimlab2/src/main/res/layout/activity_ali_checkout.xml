@@ -22,16 +22,13 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/ibrahimSelectPayment"
             android:layout_width="244dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
             android:layout_marginBottom="28dp"
-            android:gravity="center"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:textColor="#3F51B5"
-            android:text="Select any payment option" />
+            style="@style/TxtType1Display"
+            android:text="@string/ibrahimTxtSelectPayment" />
 
         <RadioGroup
             android:id="@+id/ibrahimPaymentRadioGroup"
@@ -48,7 +45,7 @@
                 android:layout_height="22dp"
                 android:layout_marginStart="64dp"
                 android:layout_marginBottom="196dp"
-                android:text="Cash"
+                android:text="@string/ibrahimTxtCashOption"
                 android:textSize="40px"></RadioButton>
 
             <RadioButton
@@ -57,7 +54,7 @@
                 android:layout_height="22dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginBottom="196dp"
-                android:text="Debit Card"
+                android:text="@string/ibrahimTxtDebitOption"
                 android:textSize="40px"></RadioButton>
 
             <RadioButton
@@ -66,19 +63,17 @@
                 android:layout_height="22dp"
                 android:layout_marginStart="13dp"
                 android:layout_marginBottom="196dp"
-                android:text="Credit Card"
+                android:text="@string/ibrahimTxtCreditOption"
                 android:textSize="40px"></RadioButton>
 
-
         </RadioGroup>
-
 
         <Button
             android:id="@+id/ibrahimCheckoutBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:text="Checkout"
+            android:text="@string/ibrahimTxtCheckout"
             android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

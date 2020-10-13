@@ -12,7 +12,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="Debit Card"
+        android:text="@string/ibrahimTxtDebitCard"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCardName" />
@@ -23,7 +23,7 @@
         android:layout_height="21dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="Phone"
+        android:text="@string/ibrahimTxtPhone"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtAge" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="Age"
+        android:text="@string/ibrahimTxtAge"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtFullName" />
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="Full Name"
+        android:text="@string/ibrahimTxtFullname"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCCV" />
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
-        android:text="Country"
+        android:text="@string/ibrahimTxtCountry"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPhone" />
@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="Expiry Date"
+        android:text="@string/ibrahimTxtExpiryDate"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDebitCard" />
@@ -131,7 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="Card Holder Name"
+        android:text="@string/ibrahimTxtCardHolder"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -168,7 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="CCV"
+        android:text="@string/ibrahimTxtCCV"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDate" />
@@ -192,7 +192,7 @@
         android:layout_marginEnd="28dp"
         android:ems="10"
         android:inputType="date"
-        android:text="Click For Date"
+        android:text="@string/ibrahimEditExpiryDate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtDate"
@@ -203,7 +203,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
-        android:text="Pay"
+        android:text="@string/ibrahimTxtPayBtn"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
