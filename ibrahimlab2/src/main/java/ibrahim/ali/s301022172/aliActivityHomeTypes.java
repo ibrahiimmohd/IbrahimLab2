@@ -18,8 +18,9 @@ public class aliActivityHomeTypes extends AppCompatActivity {
     ArrayList<HomeTypes> checkboxEntries = new ArrayList<HomeTypes>();
     HomeTypes apt1, apt2, apt3, apt4;
     HomeTypes condo1, condo2, condo3, condo4;
+    HomeTypes det1, det2, det3, det4;
+    HomeTypes semiD1, semiD2, semiD3, semiD4;
     HomeTypes town1, town2, town3, town4;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,18 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         condo2 = new HomeTypes(getString(R.string.ibrahimCondo2String), 524900);
         condo3 = new HomeTypes(getString(R.string.ibrahimCondo3String), 495000);
         condo4 = new HomeTypes(getString(R.string.ibrahimCondo4String), 599900);
+
+        //Detached
+        det1 = new HomeTypes(getString(R.string.ibrahimDet1String), 434900);
+        det2 = new HomeTypes(getString(R.string.ibrahimDet2String), 550000);
+        det3 = new HomeTypes(getString(R.string.ibrahimDet3String), 959900);
+        det4 = new HomeTypes(getString(R.string.ibrahimDet4String), 999000);
+
+        //Semi Detached
+        semiD1 = new HomeTypes(getString(R.string.ibrahimSemiD1String), 899900);
+        semiD2 = new HomeTypes(getString(R.string.ibrahimSemiD2String), 999000);
+        semiD3 = new HomeTypes(getString(R.string.ibrahimSemiD3String), 788800);
+        semiD4 = new HomeTypes(getString(R.string.ibrahimSemiD4String), 739900);
 
         //Town House
         town1 = new HomeTypes(getString(R.string.ibrahimTown1String), 660000);
@@ -170,12 +183,97 @@ public class aliActivityHomeTypes extends AppCompatActivity {
 
             break;
 
-          case R.id.ibrahimTownAddBtn:
+          case R.id.ibrahimSemiDAddBtn:
+
+              if (((CheckBox) findViewById(R.id.ibrahimSemiDVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimSemiDPChbx1)).isChecked()) {
+                  if (checkboxEntries.contains(semiD1) != true){
+                      checkboxEntries.add(semiD1);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimSemiD1String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimSemiD1String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimSemiDVChbx2)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimSemiDPChbx2)).isChecked()) {
+                  if (checkboxEntries.contains(semiD2) != true){
+                      checkboxEntries.add(semiD2);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimSemiD2String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this,  getString(R.string.ibrahimSemiD2String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimSemiDVChbx3)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimSemiDPChbx3)).isChecked()) {
+                  if (checkboxEntries.contains(semiD3) != true){
+                      checkboxEntries.add(semiD3);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimSemiD3String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimSemiD3String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimSemiDVChbx4)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimSemiDPChbx4)).isChecked()) {
+                  if (checkboxEntries.contains(semiD4) != true){
+                      checkboxEntries.add(semiD4);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimSemiD4String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimSemiD4String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
 
               if(checkboxEntries.size() == 0)
               {
-                  Toast.makeText(this, "Please add any house of your interest", Toast.LENGTH_LONG).show();
+                  Toast.makeText(this, "Please add any house(s) of your interest", Toast.LENGTH_LONG).show();
               }
+
+              break;
+
+          case R.id.ibrahimDetAddBtn:
+
+              if (((CheckBox) findViewById(R.id.ibrahimDetVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimDetPChbx1)).isChecked()) {
+                  if (checkboxEntries.contains(det1) != true){
+                      checkboxEntries.add(det1);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimDet1String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimDet1String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimDetVChbx2)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimDetPChbx2)).isChecked()) {
+                  if (checkboxEntries.contains(det2) != true){
+                      checkboxEntries.add(det2);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimDet2String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this,  getString(R.string.ibrahimDet2String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimDetVChbx3)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimDetPChbx3)).isChecked()) {
+                  if (checkboxEntries.contains(det3) != true){
+                      checkboxEntries.add(det3);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimDet3String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimDet3String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if (((CheckBox) findViewById(R.id.ibrahimDetVChbx4)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimDetPChbx4)).isChecked()) {
+                  if (checkboxEntries.contains(det4) != true){
+                      checkboxEntries.add(det4);
+                      Toast.makeText(this, "You have added " + getString(R.string.ibrahimDet4String), Toast.LENGTH_LONG).show();
+                  }else{
+                      Toast.makeText(this, getString(R.string.ibrahimDet4String) + " has already been added!", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              if(checkboxEntries.size() == 0)
+              {
+                  Toast.makeText(this, "Please add any house(s) of your interest", Toast.LENGTH_LONG).show();
+              }
+
+              break;
+
+          case R.id.ibrahimTownAddBtn:
 
               if (((CheckBox) findViewById(R.id.ibrahimTownVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimTownPChbx1)).isChecked()) {
                   if (checkboxEntries.contains(town1) != true){
@@ -223,6 +321,8 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         case R.id.ibrahimAptNextBtn:
         case R.id.ibrahimCondoNextBtn:
         case R.id.ibrahimTownNextBtn:
+        case R.id.ibrahimSemiDNextBtn:
+        case R.id.ibrahimDetNextBtn:
 
             if(checkboxEntries.size() == 0)
             {

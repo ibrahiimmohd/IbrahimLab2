@@ -1,6 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ibrahimImgSemiD1"
+            android:layout_width="272dp"
+            android:layout_height="218dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/semid1" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtSemiD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:text="75A Dawes Rd, Toronto, Ontario\n$899,900 CAD" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDPChbx1"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Virtually" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDVChbx1"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Physically" />
+
+        <ImageView
+            android:id="@+id/ibrahimImgSemiD2"
+            android:layout_width="272dp"
+            android:layout_height="218dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/semid2" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtSemiD2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:text="10 Strathmore Blvd, Toronto, Ontario\n$999,000 CAD" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDVChbx2"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Virtually" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDPChbx2"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Physically" />
+
+        <ImageView
+            android:id="@+id/ibrahimImgSemiD3"
+            android:layout_width="272dp"
+            android:layout_height="218dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/semid3" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtSemiD3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:text="16 Cobb Ave, Toronto, Ontario\n$788,800 CAD" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDPChbx3"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Virtually" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDVChbx3"
+            android:layout_width="134dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Physically" />
+
+        <ImageView
+            android:id="@+id/ibrahimImgSemiD4"
+            android:layout_width="272dp"
+            android:layout_height="218dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/semid4" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtSemiD4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:text="158 Woodfern Dr, Toronto, Ontario\n$739,900 CAD" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDVChbx4"
+            android:layout_width="133dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Virtually" />
+
+        <CheckBox
+            android:id="@+id/ibrahimSemiDPChbx4"
+            android:layout_width="133dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Physically" />
+
+        <Button
+            android:id="@+id/ibrahimSemiDAddBtn"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="Add Interest(s)" />
+
+        <Button
+            android:id="@+id/ibrahimSemiDNextBtn"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="Next" />
+    </LinearLayout>
+</ScrollView>

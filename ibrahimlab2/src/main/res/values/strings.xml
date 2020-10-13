@@ -14,6 +14,18 @@
     <string name="ibrahimCondo3String">6 Eva Road 1011, Toronto, Ontario</string>
     <string name="ibrahimCondo4String">20 Richardson St, Toronto, Ontario</string>
 
+    <!-- Detached -->
+    <string name="ibrahimDet1String">161 Cinrickbar Cres, Toronto, Ontario</string>
+    <string name="ibrahimDet2String">286 Strathmore Blvd, Toronto, Ontario</string>
+    <string name="ibrahimDet3String">9 Thirty Ninth St, Toronto, Ontario</string>
+    <string name="ibrahimDet4String">720 Bloor Street, Toronto, Ontario</string>
+
+    <!-- Semi Detached -->
+    <string name="ibrahimSemiD1String">75A Dawes Rd, Toronto, Ontario</string>
+    <string name="ibrahimSemiD2String">10 Strathmore Blvd, Toronto, Ontario</string>
+    <string name="ibrahimSemiD3String">16 Cobb Ave, Toronto, Ontario</string>
+    <string name="ibrahimSemiD4String">158 Woodfern Dr, Toronto, Ontario</string>
+
     <!-- Town House -->
     <string name="ibrahimTown1String">5 Everson Dr, Toronto, Ontario</string>
     <string name="ibrahimTown2String">593 Kennedy Road, Toronto, Ontario</string>
