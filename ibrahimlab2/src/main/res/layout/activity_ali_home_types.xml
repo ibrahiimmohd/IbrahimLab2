@@ -8,17 +8,18 @@
 
     <TextView
         android:id="@+id/aliTxtView"
-        android:layout_width="301dp"
-        android:layout_height="94dp"
+        android:layout_width="266dp"
+        android:layout_height="129dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="Click on any menu options to display homes"
         android:textColor="#2270B5"
-        android:textSize="40px"
+        android:textSize="70px"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
