@@ -130,8 +130,8 @@
 
         <Button
             android:id="@+id/ibrahimCondoAddBtn"
-            android:layout_width="213dp"
-            android:layout_height="wrap_content"
+            android:layout_width="228dp"
+            android:layout_height="81dp"
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
@@ -139,11 +139,13 @@
 
         <Button
             android:id="@+id/ibrahimCondoNextBtn"
-            android:layout_width="213dp"
-            android:layout_height="wrap_content"
+            android:layout_width="228dp"
+            android:layout_height="81dp"
             android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
             android:onClick="onClick"
             android:text="@string/ibrahimTxtNextBtn" />
+
     </LinearLayout>
 </ScrollView>

@@ -8,47 +8,45 @@
 
     <TextView
         android:id="@+id/ibrahimTxtDebitCard"
-        android:layout_width="77dp"
-        android:layout_height="27dp"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/ibrahimTxtDebitCard"
+        android:layout_marginTop="26dp"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtDebitCard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCardName" />
 
     <TextView
         android:id="@+id/ibrahimTxtPhone"
-        android:layout_width="46dp"
-        android:layout_height="21dp"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/ibrahimTxtPhone"
+        android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtPhone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtAge" />
 
     <TextView
         android:id="@+id/ibrahimTxtAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/ibrahimTxtAge"
+        android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtAge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtFullName" />
 
     <EditText
         android:id="@+id/ibrahimInsertFullname"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginEnd="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtFullName"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertCCV" />
 
@@ -56,11 +54,9 @@
         android:id="@+id/ibrahimInsertCreditCard"
         android:layout_width="209dp"
         android:layout_height="50dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="28dp"
         android:ems="10"
-        android:maxLength="16"
         android:inputType="number"
+        android:maxLength="16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCreditCard"
@@ -68,71 +64,70 @@
 
     <TextView
         android:id="@+id/ibrahimTxtFullName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/ibrahimTxtFullname"
+        android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtFullname"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCCV" />
 
     <TextView
         android:id="@+id/ibrahimTxtCountry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/ibrahimTxtCountry"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtCountry"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPhone" />
 
     <EditText
         android:id="@+id/ibrahimInsertCountry"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
         android:layout_marginBottom="112dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCountry"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertPhone"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/ibrahimInsertAge"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtAge"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertFullname" />
 
     <TextView
         android:id="@+id/ibrahimTxtDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/ibrahimTxtExpiryDate"
+        android:layout_marginTop="26dp"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtExpiryDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDebitCard" />
 
     <TextView
         android:id="@+id/ibrahimTxtCardName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="@string/ibrahimTxtCardHolder"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtCardHolder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,71 +135,68 @@
         android:id="@+id/ibrahimInsertCardName"
         android:layout_width="209dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCardName"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/ibrahimInsertPhone"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:maxLength="10"
         android:inputType="phone"
+        android:maxLength="10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtPhone"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertAge" />
 
     <TextView
         android:id="@+id/ibrahimTxtCCV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="25dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/ibrahimTxtCCV"
+        android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-black"
+        android:text="@string/ibrahimTxtCCV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDate" />
 
     <EditText
         android:id="@+id/ibrahimInsertCCV"
-        android:layout_width="98dp"
+        android:layout_width="80dp"
         android:layout_height="51dp"
-        android:layout_marginStart="110dp"
         android:ems="10"
-        android:maxLength="3"
         android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCCV"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertDate" />
 
     <EditText
         android:id="@+id/ibrahimInsertDate"
-        android:layout_width="wrap_content"
+        android:layout_width="209dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginEnd="28dp"
         android:ems="10"
         android:inputType="date"
         android:text="@string/ibrahimEditExpiryDate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ibrahimTxtDate"
         app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertCreditCard" />
 
     <Button
         android:id="@+id/ibrahimPayBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="116dp"
+        android:layout_height="61dp"
         android:layout_marginBottom="108dp"
-        android:text="@string/ibrahimTxtPayBtn"
         android:onClick="onClick"
+        android:text="@string/ibrahimTxtPayBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.913"
