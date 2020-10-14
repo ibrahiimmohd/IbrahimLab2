@@ -19,14 +19,14 @@
 
     <style name="TxtType1Display">
         <item name="android:gravity">center</item>
-        <item name="android:textSize">50px</item>
+        <item name="android:textSize">@dimen/ibrahimTxtSizeType1</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/txtBlueColour</item>
     </style>
 
     <style name="finalOrderTxtDisplay">
         <item name="android:fontFamily">sans-serif-black</item>
-        <item name="android:textSize">60px</item>
+        <item name="android:textSize">@dimen/ibrahimTxtSizeType1</item>
         <item name="android:gravity">center</item>
     </style>
 

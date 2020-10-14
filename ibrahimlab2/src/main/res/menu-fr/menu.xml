@@ -8,23 +8,23 @@
 
     <item
         android:id="@+id/aliApt"
-        android:title="Apartment">
+        android:title="@string/ibrahimTxtApartment">
     </item>
     <item
         android:id="@+id/aliDetached"
-        android:title="Detached Home">
+        android:title="@string/ibrahimTxtDetached">
     </item>
     <item
         android:id="@+id/aliSemiDetached"
-        android:title="Semi-detached Home">
+        android:title="@string/ibrahimTxtSemiDetached">
     </item>
     <item
         android:id="@+id/aliCondominium"
-        android:title="Condominium Apartment">
+        android:title="@string/ibrahimTxtCondominium">
     </item>
     <item
         android:id="@+id/aliTownHouse"
-        android:title="Town House">
+        android:title="@string/ibrahimTxtTownHouse">
     </item>
 
 </menu>

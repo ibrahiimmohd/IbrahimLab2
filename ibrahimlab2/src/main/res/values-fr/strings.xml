@@ -10,24 +10,24 @@
     <string name="ibrahimAppTitle">LeaseOrRentHome Inc.</string>
 
     <!-- Home Screen -->
-    <string name="ibrahimTxtMainScreen">Click on any menu options to display homes</string>
-    <string name="ibrahimTxtEnterBtn">Enter</string>
+    <string name="ibrahimTxtMainScreen">Cliquez sur n\'importe quelle option de menu pour afficher les maisons</string>
+    <string name="ibrahimTxtEnterBtn">Entrer</string>
 
     <!-- Home Types-->
-    <string name="ibrahimTxtNextBtn">Next</string>
-    <string name="ibrahimTxtInterestBtn">Add Interest(s)</string>
-    <string name="ibrahimPhysicalChx">Physically</string>
-    <string name="ibrahimVirtualChx">Virtually</string>
-    <string name="ibrahimSetAdded">You have added \</string>
-    <string name="ibrahimSetAlreadyAdded">\ has already been added!</string>
-    <string name="ibrahimSetHouseInterest">Please add any house(s) of your interest</string>
+    <string name="ibrahimTxtNextBtn">Suivant</string>
+    <string name="ibrahimTxtInterestBtn">Ajouter un (des) intérêt (s)</string>
+    <string name="ibrahimPhysicalChx">Physiquement</string>
+    <string name="ibrahimVirtualChx">Virtuellement</string>
+    <string name="ibrahimSetAdded">Vous avez ajouté \</string>
+    <string name="ibrahimSetAlreadyAdded">\ a déjà été ajouté!</string>
+    <string name="ibrahimSetHouseInterest">Veuillez ajouter les maisons qui vous intéressent</string>
 
     <!-- Menu -->
-    <string name="ibrahimTxtApartment">Apartment</string>
-    <string name="ibrahimTxtDetached">Detached Home</string>
-    <string name="ibrahimTxtSemiDetached">Semi-detached Home</string>
-    <string name="ibrahimTxtCondominium">Condominium Apartment</string>
-    <string name="ibrahimTxtTownHouse">Town House</string>
+    <string name="ibrahimTxtApartment">Appartement</string>
+    <string name="ibrahimTxtDetached">Maison individuelle</string>
+    <string name="ibrahimTxtSemiDetached">Maison jumelée</string>
+    <string name="ibrahimTxtCondominium">Appartement en copropriété</string>
+    <string name="ibrahimTxtTownHouse">Maison de ville</string>
 
     <!-- Apartments -->
     <string name="ibrahimApt1String">120 Harrison Garden Blvd, Toronto, Ontario</string>
@@ -85,40 +85,41 @@
     <string name="ibrahimTxtTownH4">60 Homewood Avenue, Toronto, Ontario\n$950,000 CAD</string>
 
     <!-- Checkout -->
-    <string name="ibrahimTxtSelectPayment">Select any payment option</string>
-    <string name="ibrahimTxtCashOption">Cash</string>
-    <string name="ibrahimTxtDebitOption">Debit Card</string>
-    <string name="ibrahimTxtCreditOption">Credit Card</string>
-    <string name="ibrahimTxtCheckout">Checkout</string>
-    <string name="ibrahimIfHomePayment">Payment and Home Type Radio Groups are not selected!</string>
-    <string name="ibrahimIfPayment">Payment Radio Group is not selected!</string>
-    <string name="ibrahimIfHome">Home Type Radio Group is not selected!</string>
-    <string name="ibrahimSelectionsClear">All your selections will be lost. Do you want to proceed?</string>
-    <string name="ibrahimSetAddress">Address: \</string>
-    <string name="ibrahimSetPrice">\nPrice: $</string>
+    <string name="ibrahimTxtSelectPayment">Sélectionnez n\'importe quelle option de paiement</string>
+    <string name="ibrahimTxtCashOption">En espèces</string>
+    <string name="ibrahimTxtDebitOption">Carte de débit</string>
+    <string name="ibrahimTxtCreditOption">Carte de crédit</string>
+    <string name="ibrahimTxtCheckout">Check-out</string>
+    <string name="ibrahimIfHomePayment">Les groupes de radio de type Paiement et Maison ne sont pas sélectionnés!</string>
+    <string name="ibrahimIfPayment">Le groupe de radio de paiement n\'est pas sélectionné!</string>
+    <string name="ibrahimIfHome">Le groupe de radio de type domestique n\'est pas sélectionné!</string>
+    <string name="ibrahimSelectionsClear">Toutes vos sélections seront perdues. Voulez-vous poursuivre?</string>
+    <string name="ibrahimSetAddress">Adresse: \</string>
+    <string name="ibrahimSetPrice">\nPrix: $</string>
 
     <!-- Cash/Credit/Debit -->
-    <string name="ibrahimTxtExpiryDate">Expiry Date</string>
-    <string name="ibrahimTxtCardHolder">Card Holder Name</string>
+    <string name="ibrahimTxtExpiryDate">Date d\'expiration</string>
+    <string name="ibrahimTxtCardHolder">Nom du titulaire</string>
     <string name="ibrahimTxtCCV">CCV</string>
     <string name="ibrahimEditExpiryDate">Click For Date</string>
-    <string name="ibrahimTxtCreditCard">Credit Card</string>
-    <string name="ibrahimTxtDebitCard">Debit Card</string>
-    <string name="ibrahimTxtCashScreen">Please prepare your cash!</string>
-    <string name="ibrahimTxtPhone">Phone</string>
-    <string name="ibrahimTxtAge">Age</string>
-    <string name="ibrahimTxtFullname">Full Name</string>
-    <string name="ibrahimTxtCountry">Country</string>
-    <string name="ibrahimTxtPayBtn">Pay</string>
+    <string name="ibrahimTxtCreditCard">Cliquez pour la date</string>
+    <string name="ibrahimTxtDebitCard">Carte de débit</string>
+    <string name="ibrahimTxtCashScreen">Veuillez préparer votre argent!</string>
+    <string name="ibrahimTxtPhone">Téléphone</string>
+    <string name="ibrahimTxtAge">Âge</string>
+    <string name="ibrahimTxtFullname">Nom complet</string>
+    <string name="ibrahimTxtCountry">Pays</string>
+    <string name="ibrahimTxtPayBtn">Payer</string>
 
     <!-- Final Order Info -->
-    <string name="ibrahimSetThankYou1">Thank you \</string>
-    <string name="ibrahimSetThankYou2">\ for your purchase! We would love to see you again!</string>
+    <string name="ibrahimSetThankYou1">Je vous remercie \</string>
+    <string name="ibrahimSetThankYou2">\ pour votre achat! Nous serions ravis de vous revoir!</string>
 
     <!-- Payment Error Messages -->
-    <string name="ibrahimSetPhoneError">Please Insert 10 Digit long number</string>
-    <string name="ibrahimSetFullnameError">Please Insert your full name</string>
-    <string name="ibrahimSetCreditCardError">Please Insert 16 Digit long number</string>
-    <string name="ibrahimSetCCVError">Please Insert 3 Digit long number</string>
+    <string name="ibrahimSetPhoneError">Veuillez insérer un numéro de 10 chiffres</string>
+    <string name="ibrahimSetFullnameError">Veuillez insérer votre nom complet</string>
+    <string name="ibrahimSetCreditCardError">Veuillez insérer un nombre long de 16 chiffres</string>
+    <string name="ibrahimSetCCVError">Veuillez insérer un nombre long de 3 chiffres</string>
+
 
 </resources>
