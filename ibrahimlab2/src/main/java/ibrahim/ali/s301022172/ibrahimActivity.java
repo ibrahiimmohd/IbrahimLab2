@@ -13,7 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class ibrahimActivity extends AppCompatActivity {
-    //Declare intent variable
+    //Declare variables
     Intent intent;
 
     @Override
@@ -22,10 +22,12 @@ public class ibrahimActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ibrahim);
     }
 
+    //onClick event listener
     public void onClick(View view) {
 
         int id = view.getId();
 
+        //if Enter btn is clicked, start aliActivityHomeTypes activity
         if( id == R.id.ibrahimEnter){
             intent = new Intent(ibrahimActivity.this, aliActivityHomeTypes.class);
             //starts the new activity

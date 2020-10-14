@@ -23,7 +23,7 @@ import android.widget.RadioButton;
 import java.util.ArrayList;
 
 public class aliActivityPayment extends AppCompatActivity {
-
+    //Declare variables
     DatePickerDialog picker;
     EditText datePicker, creditOrDebitCard, ccv, phone, fullname;
     Intent intent;
@@ -33,9 +33,13 @@ public class aliActivityPayment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Initialize radioBtnsArray
         radioBtnsArray = new ArrayList<Boolean>();
+
+        //Retrieve data from aliActivityCheckout activity
         radioBtnsArray = (ArrayList<Boolean>) getIntent().getSerializableExtra("isChecked");
 
+        //Inspect the retrieved data and perform actions accordingly
         if(radioBtnsArray.get(0) == true){
             setContentView(R.layout.ali_cash_payment);
         }else if(radioBtnsArray.get(1) == true){
@@ -44,6 +48,7 @@ public class aliActivityPayment extends AppCompatActivity {
             setContentView(R.layout.ali_credit_payment);
         }
 
+        //if xaml file is not cash layout, initialize datepicker variable
         if(radioBtnsArray.get(0) != true){
             datePicker = (EditText) findViewById(R.id.ibrahimInsertDate);
             datePicker.setInputType(InputType.TYPE_NULL);
@@ -69,17 +74,18 @@ public class aliActivityPayment extends AppCompatActivity {
         }
     }
 
+    //onClick event listener
     public void onClick(View view) {
-
+        //Get ids' values
         creditOrDebitCard = (EditText) findViewById(R.id.ibrahimInsertCreditCard);
         ccv = (EditText) findViewById(R.id.ibrahimInsertCCV);
         phone = (EditText) findViewById(R.id.ibrahimInsertPhone);
         fullname = (EditText) findViewById(R.id.ibrahimInsertFullname);
-
         int id = view.getId();
 
         if( id == R.id.ibrahimPayBtn){
 
+            //Display error messages if validation fails
             if(phone.length() != 10)
             {
                 phone.setError(getString(R.string.ibrahimSetPhoneError));
@@ -109,6 +115,7 @@ public class aliActivityPayment extends AppCompatActivity {
                 }
 
             }else{
+                //if validations passes, start aliActivityFinalOrder activity
                 if(phone.length() == 10 && fullname.length() != 0)
                 {
                     intent = new Intent(this, aliActivityFinalOrder.class);

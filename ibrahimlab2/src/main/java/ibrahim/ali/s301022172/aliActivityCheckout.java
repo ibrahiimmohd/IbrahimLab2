@@ -22,7 +22,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class aliActivityCheckout extends AppCompatActivity {
-
+    //Declare Variables
     TextView txtV;
     HomeTypes homeType;
     Intent intent;
@@ -34,9 +34,11 @@ public class aliActivityCheckout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ali_checkout);
 
+        //Retrieve passed data from aliActivityHomeTypes
         ArrayList<HomeTypes> homeTypeArray = new ArrayList<HomeTypes>();
         homeTypeArray = (ArrayList<HomeTypes>) getIntent().getSerializableExtra("homeType-array");
 
+        //Create Radio Buttons
         ViewGroup hourButtonLayout = (ViewGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup);
         for (int i = 0; i < homeTypeArray.size(); i++) {
             RadioButton button = new RadioButton(this);
@@ -48,45 +50,50 @@ public class aliActivityCheckout extends AppCompatActivity {
         }
     }
 
+    //onClick event listener
     public void onClick(View view) {
-
+        //Get ids' values
         cash = (RadioButton) findViewById(R.id.ibrahimCashRadioBtn);
         debit = (RadioButton) findViewById(R.id.ibrahimDebitRadioBtn);
         credit = (RadioButton) findViewById(R.id.ibrahimCreditRadioBtn);
+        int id = view.getId();
 
+        //Clear array
         paymentRadioButtons.clear();
+
+        //Add radio buttons selection to array
         paymentRadioButtons.add(cash.isChecked());
         paymentRadioButtons.add(debit.isChecked());
         paymentRadioButtons.add(credit.isChecked());
 
-        int id = view.getId();
-
         if( id == R.id.ibrahimCheckoutBtn){
+            //Scenario Payment btn and Home Type radio btn both selected
             if (((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() != -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() != -1)
             {
-                // one of the radio buttons is checked
+                //Start new aliActivityPayment activity
                 intent = new Intent(this, aliActivityPayment.class);
                 intent.putExtra("isChecked", paymentRadioButtons);
                 startActivity(intent);
             }
+            //Scenario Payment btn and Home Type radio btn both not selected
             else if (((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() == -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() == -1)
             {
-                //Payment and Home Type Radio Groups are not selected
                 Toast.makeText(this, R.string.ibrahimIfHomePayment, Toast.LENGTH_LONG).show();
             }
+            //Scenario Payment btn not selected and Home Type radio selected
             else if(((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() == -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() != -1)
             {
-                //Payment Radio Group is not selected
                 Toast.makeText(this, R.string.ibrahimIfPayment, Toast.LENGTH_LONG).show();
             }
+            //Scenario Payment btn selected and Home Type radio not selected
             else if(((RadioGroup) findViewById(R.id.ibrahimPaymentRadioGroup)).getCheckedRadioButtonId() != -1 && ((RadioGroup) findViewById(R.id.ibrahimHomeTypeRadioGroup)).getCheckedRadioButtonId() == -1)
             {
-                //Home Type Radio Group is not selected
                 Toast.makeText(this, R.string.ibrahimIfHome, Toast.LENGTH_LONG).show();
             }
         }
     }
 
+    //If back btn pressed, display alert dialog
     @Override
     public void onBackPressed(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

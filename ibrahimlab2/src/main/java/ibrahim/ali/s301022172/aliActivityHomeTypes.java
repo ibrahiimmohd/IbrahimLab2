@@ -20,6 +20,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class aliActivityHomeTypes extends AppCompatActivity {
+    //Declare variables
     Intent intent;
     ArrayList<HomeTypes> checkboxEntries = new ArrayList<HomeTypes>();
     HomeTypes apt1, apt2, apt3, apt4;
@@ -32,6 +33,8 @@ public class aliActivityHomeTypes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ali_home_types);
+
+        //Initialize variables
         //Apartments
         apt1 = new HomeTypes(getString(R.string.ibrahimApt1String), 600000);
         apt2 = new HomeTypes(getString(R.string.ibrahimApt2String), 869000);
@@ -63,14 +66,15 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         town4 = new HomeTypes(getString(R.string.ibrahimTown4String), 950000);
     }
 
+    //Create overflow menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
 
+    //Dictate actions based on menu options
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
@@ -96,12 +100,14 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         return true;
     }
 
+    //onClick event listener
     public void onClick(View view) {
 
       switch(view.getId()){
 
+        //If virtual or physical checkboxes is selected, add the home type to the array
+        //if it already exist, display message saying the selection already exists in the array
         case R.id.ibrahimAptAddBtn:
-
             if (((CheckBox) findViewById(R.id.ibrahimAptVChbx1)).isChecked() || ((CheckBox) findViewById(R.id.ibrahimAptPChbx1)).isChecked()) {
                 if (checkboxEntries.contains(apt1) != true){
                     checkboxEntries.add(apt1);
@@ -138,6 +144,7 @@ public class aliActivityHomeTypes extends AppCompatActivity {
                 }
             }
 
+            //If next btn is clicked and checkboxeEntries array is empty, display message
             if(checkboxEntries.size() == 0)
             {
                 Toast.makeText(this, R.string.ibrahimSetHouseInterest, Toast.LENGTH_LONG).show();
@@ -182,6 +189,7 @@ public class aliActivityHomeTypes extends AppCompatActivity {
                 }
             }
 
+            //If next btn is clicked and checkboxeEntries array is empty, display message
             if(checkboxEntries.size() == 0)
             {
                 Toast.makeText(this, R.string.ibrahimSetHouseInterest, Toast.LENGTH_LONG).show();
@@ -227,6 +235,7 @@ public class aliActivityHomeTypes extends AppCompatActivity {
                   }
               }
 
+              //If next btn is clicked and checkboxeEntries array is empty, display message
               if(checkboxEntries.size() == 0)
               {
                   Toast.makeText(this, R.string.ibrahimSetHouseInterest, Toast.LENGTH_LONG).show();
@@ -272,6 +281,7 @@ public class aliActivityHomeTypes extends AppCompatActivity {
                   }
               }
 
+              //If next btn is clicked and checkboxeEntries array is empty, display message
               if(checkboxEntries.size() == 0)
               {
                   Toast.makeText(this, R.string.ibrahimSetHouseInterest, Toast.LENGTH_LONG).show();
@@ -317,6 +327,7 @@ public class aliActivityHomeTypes extends AppCompatActivity {
                   }
               }
 
+              //If next btn is clicked and checkboxeEntries array is empty, display message
               if(checkboxEntries.size() == 0)
               {
                   Toast.makeText(this, R.string.ibrahimSetHouseInterest, Toast.LENGTH_LONG).show();
@@ -330,6 +341,7 @@ public class aliActivityHomeTypes extends AppCompatActivity {
         case R.id.ibrahimSemiDNextBtn:
         case R.id.ibrahimDetNextBtn:
 
+            //If next btn is clicked and checkboxeEntries array is empty, display message
             if(checkboxEntries.size() == 0)
             {
                 Toast.makeText(this, R.string.ibrahimSetHouseInterest, Toast.LENGTH_LONG).show();
