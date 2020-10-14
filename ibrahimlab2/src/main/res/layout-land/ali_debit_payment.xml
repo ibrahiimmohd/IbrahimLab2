@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".aliActivityPayment">
+
+        <TextView
+            android:id="@+id/ibrahimTxtDebitCard"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtDebitCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCardName" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtPhone"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtPhone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtAge" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtAge"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtAge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtFullName" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertFullname"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtFullName"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertCCV" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertCreditCard"
+            android:layout_width="209dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="172dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCreditCard"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertCardName" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtFullName"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtFullname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtCCV" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtCountry"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtCountry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPhone" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertCountry"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="112dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCountry"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertPhone"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertAge"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtAge"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertFullname" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtDate"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtExpiryDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDebitCard" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtCardName"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtCardHolder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertCardName"
+            android:layout_width="209dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCardName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertPhone"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtPhone"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertAge" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtCCV"
+            android:layout_width="143dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtCCV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtDate" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertCCV"
+            android:layout_width="80dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.367"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCCV"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertDate" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertDate"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="@string/ibrahimEditExpiryDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtDate"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertCreditCard" />
+
+        <Button
+            android:id="@+id/ibrahimPayBtn"
+            android:layout_width="116dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="108dp"
+            android:onClick="onClick"
+            android:text="@string/ibrahimTxtPayBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.83"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertCountry"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

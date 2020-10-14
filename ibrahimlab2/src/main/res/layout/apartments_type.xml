@@ -131,7 +131,7 @@
             android:id="@+id/ibrahimAptAddBtn"
             android:layout_width="228dp"
             android:layout_height="81dp"
-            android:layout_marginStart="100dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:onClick="onClick"
             android:text="@string/ibrahimTxtInterestBtn" />
@@ -140,7 +140,7 @@
             android:id="@+id/ibrahimAptNextBtn"
             android:layout_width="228dp"
             android:layout_height="81dp"
-            android:layout_marginStart="100dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:onClick="onClick"

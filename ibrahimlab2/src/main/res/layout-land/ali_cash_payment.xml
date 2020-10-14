@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".aliActivityPayment">
+
+        <TextView
+            android:id="@+id/ibrahimTxtPhone"
+            android:layout_width="46dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtPhone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtAge" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/ibrahimTxtAge"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtFullName" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertFullname"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtFullName"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPrepareCash" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtFullName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtFullname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPrepareCash" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ibrahimTxtCountry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimTxtPhone" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertCountry"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="112dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtCountry"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertPhone"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertAge"
+            android:layout_width="350dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtAge"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertFullname" />
+
+        <EditText
+            android:id="@+id/ibrahimInsertPhone"
+            android:layout_width="350dp"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintStart_toEndOf="@+id/ibrahimTxtPhone"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertAge" />
+
+        <Button
+            android:id="@+id/ibrahimPayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="108dp"
+            android:onClick="onClick"
+            android:text="@string/ibrahimTxtPayBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibrahimInsertCountry"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ibrahimTxtPrepareCash"
+            android:layout_width="350dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/ibrahimTxtCashScreen"
+            android:textSize="70px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.601"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

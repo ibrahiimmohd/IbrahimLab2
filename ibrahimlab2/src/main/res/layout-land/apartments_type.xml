@@ -12,123 +12,123 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/ibrahimImgTown1"
+            android:id="@+id/ibrahimImgApt1"
             android:layout_width="272dp"
             android:layout_height="218dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/townh1" />
+            app:srcCompat="@drawable/apt1" />
 
         <TextView
-            android:id="@+id/ibrahimTxtTown1"
+            android:id="@+id/ibrahimTxtApt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/TxtType1Display"
-            android:text="@string/ibrahimTxtTownH1" />
+            android:text="@string/ibrahimTxtApt1" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownPChbx1"
+            android:id="@+id/ibrahimAptPChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownVChbx1"
+            android:id="@+id/ibrahimAptVChbx1"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
-            android:id="@+id/ibrahimImgTown2"
+            android:id="@+id/ibrahimImgApt2"
             android:layout_width="272dp"
             android:layout_height="218dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/townh2" />
+            app:srcCompat="@drawable/apt2" />
 
         <TextView
-            android:id="@+id/ibrahimTxtTown2"
+            android:id="@+id/ibrahimTxtApt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/TxtType1Display"
-            android:text="@string/ibrahimTxtTownH2" />
+            android:text="@string/ibrahimTxtApt2" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownVChbx2"
+            android:id="@+id/ibrahimAptVChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownPChbx2"
+            android:id="@+id/ibrahimAptPChbx2"
             android:layout_width="135dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
-            android:id="@+id/ibrahimImgTown3"
+            android:id="@+id/ibrahimImgApt3"
             android:layout_width="272dp"
             android:layout_height="218dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/townh3" />
+            app:srcCompat="@drawable/apt3" />
 
         <TextView
-            android:id="@+id/ibrahimTxtTown3"
+            android:id="@+id/ibrahimTxtApt3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/TxtType1Display"
-            android:text="@string/ibrahimTxtTownH3" />
+            android:text="@string/ibrahimTxtApt3" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownPChbx3"
+            android:id="@+id/ibrahimAptPChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownVChbx3"
+            android:id="@+id/ibrahimAptVChbx3"
             android:layout_width="134dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimPhysicalChx" />
 
         <ImageView
-            android:id="@+id/ibrahimImgTown4"
+            android:id="@+id/ibrahimImgApt4"
             android:layout_width="272dp"
             android:layout_height="218dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/townh4" />
+            app:srcCompat="@drawable/apt4" />
 
         <TextView
-            android:id="@+id/ibrahimTxtTown4"
+            android:id="@+id/ibrahimTxtApt4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/TxtType1Display"
-            android:text="@string/ibrahimTxtTownH4" />
+            android:text="@string/ibrahimTxtApt4" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownVChbx4"
+            android:id="@+id/ibrahimAptVChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimVirtualChx" />
 
         <CheckBox
-            android:id="@+id/ibrahimTownPChbx4"
+            android:id="@+id/ibrahimAptPChbx4"
             android:layout_width="133dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:text="@string/ibrahimPhysicalChx" />
 
         <Button
-            android:id="@+id/ibrahimTownAddBtn"
+            android:id="@+id/ibrahimAptAddBtn"
             android:layout_width="228dp"
             android:layout_height="81dp"
             android:layout_gravity="center"
@@ -137,12 +137,12 @@
             android:text="@string/ibrahimTxtInterestBtn" />
 
         <Button
-            android:id="@+id/ibrahimTownNextBtn"
+            android:id="@+id/ibrahimAptNextBtn"
             android:layout_width="228dp"
             android:layout_height="81dp"
-            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
             android:onClick="onClick"
             android:text="@string/ibrahimTxtNextBtn" />
     </LinearLayout>
